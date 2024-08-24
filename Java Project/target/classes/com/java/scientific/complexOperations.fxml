@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.scientific.ScientificCalcController">
+   <children>
+      <GridPane alignment="CENTER" hgap="3.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="450.0" vgap="3.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" prefWidth="80.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" prefWidth="80.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="reciprocalButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="117.0" prefWidth="86.0" text="1/x" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="atanButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="72.0" prefWidth="140.0" text="atan" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="tanButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="119.0" prefWidth="106.0" text="tan" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logBaseNButton" mnemonicParsing="false" onAction="#onMemoryOperationPressed" prefHeight="119.0" prefWidth="104.0" text="logb" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="acosButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="72.0" prefWidth="144.0" text="acos" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="cosButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="113.0" prefWidth="103.0" text="cos" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="lnButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="106.0" prefWidth="101.0" text="ln" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="asinButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="72.0" prefWidth="140.0" text="asin" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="sinButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="87.0" prefWidth="104.0" text="sin" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="78.0" prefWidth="110.0" text="log" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="eButton" mnemonicParsing="false" onAction="#OnNumberPressed" prefHeight="71.0" prefWidth="139.0" text="e" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Verdana Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="piButton" mnemonicParsing="false" onAction="#OnNumberPressed" prefHeight="92.0" prefWidth="126.0" text="pi" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Verdana Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="percentButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="101.0" prefWidth="144.0" text="\%" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Verdana Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="fnButton" mnemonicParsing="false" onAction="#onFnPressed" prefHeight="72.0" prefWidth="142.0" text="SIMPLE">
+               <font>
+                  <Font name="Verdana Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="toThePowerOfTwoButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="72.0" prefWidth="140.0" text="x²" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="toThePowerOfNButton" mnemonicParsing="false" onAction="#onMemoryOperationPressed" prefHeight="72.0" prefWidth="141.0" text="xⁿ" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="radicalTwoButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="72.0" prefWidth="141.0" text="√x" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="radicalNButton" mnemonicParsing="false" onAction="#onMemoryOperationPressed" prefHeight="71.0" prefWidth="143.0" text="ⁿ√x" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="radicalThreeButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="125.0" prefWidth="157.0" text="³√x" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="factorialButton" mnemonicParsing="false" onAction="#onInstantOperationPressed" prefHeight="110.0" prefWidth="158.0" text="x!" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="label" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="450.0" text="0" textOverrun="CLIP">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.22368420660495758" green="0.20297271013259888" blue="0.20297271013259888" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="-64.0" prefHeight="59.0" prefWidth="458.0" style="-fx-background-color: white;" text="Scientific Calculator" textAlignment="CENTER" textFill="#eecfcf">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
